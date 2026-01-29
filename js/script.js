@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Botões de ação
     const buttons = document.querySelectorAll('.btn');
     
-    buttons.forEach(button => {
+    /*buttons.forEach(button => {
         button.addEventListener('click', function() {
             // Aqui você pode adicionar lógica para agendamento
             alert('Funcionalidade de agendamento em desenvolvimento!');
         });
-    });
+    });*/
 
     // Navbar sticky effect
     const navbar = document.querySelector('.navbar');

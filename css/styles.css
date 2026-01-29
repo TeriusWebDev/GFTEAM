@@ -1,3 +1,9 @@
+/* ========================================
+   GFTEAM - Centro de Treinamento de Jiu Jitsu
+   Design: Modernismo Esportivo Minimalista
+   Cores: Verde (#228B22) e Branco
+   ======================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -162,6 +168,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     z-index: 1;
 }
 
@@ -211,6 +218,23 @@ body {
 /* ========================================
    BUTTONS
    ======================================== */
+
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-cta,
+.navbar-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-body);
+}
 
 .btn {
     padding: 0.75rem 2rem;
@@ -362,8 +386,12 @@ body {
 
 .image-with-shadow {
     width: 100%;
+    height: auto;
+    display: block;
     border-radius: 0.5rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: center top;
 }
 
 /* ========================================
@@ -497,6 +525,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
+    display: block;
 }
 
 .professor-placeholder {
@@ -644,6 +674,12 @@ body {
    RESPONSIVE
    ======================================== */
 
+@media (max-width: 1024px) {
+    .hero {
+        height: 500px;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar-menu {
         display: none;
@@ -657,12 +693,44 @@ body {
         font-size: 1.75rem;
     }
 
+    .hero {
+        height: 400px;
+        margin-top: 80px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
 
     .cta-title {
         font-size: 1.75rem;
+    }
+
+    .professor-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 350px;
+        margin-top: 80px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .professor-image {
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
     }
 }
 
